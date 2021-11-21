@@ -3,7 +3,7 @@ try:
     from app import app
     from flask import render_template
 except ImportError as eImp:
-    print(f"The following import ERROR occurred: {eImp}")
+    print(f"The following import ERROR occurred in file {__file__}: {eImp}")
 
 # -------------Context processor-------------
 @app.context_processor
