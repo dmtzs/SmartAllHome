@@ -1,5 +1,5 @@
 <p align="center">
-  <!--img width="300" src="" alt="Cover-image"-->
+  <img width="300" src="assets/SmartHomeLogo.png" alt="Cover-image">
   <h1 align="center" style="margin: 0 auto 0 auto;">Smart Home</h1>
   <h5 align="center" style="margin: 0 auto 0 auto;">Control all your smart things in your house</h5>
 </p>
