@@ -5,4 +5,4 @@ except ImportError as eImp:
 
 app= Flask(__name__)
 
-from app import routes, admin_routes
+from app import routes, admin_routes, models
