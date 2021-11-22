@@ -1,0 +1,48 @@
+{
+    "name": "smart_all_your_home",
+    "version": "1.0.0",
+    "description": "The app that will be used for become all your home automated with alexa and/or google assistant",
+    "main": "index.js",
+    "scripts": {
+      "postinstall": "install-app-deps",
+      "start": "electron .",
+      "pack": "electron-builder --dir",
+      "dist": "electron-builder"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:dmtzs/SmartAllHome.git"
+    },
+    "author": "Diego and Guillermo <gd-code@outlook.com>",
+    "license": "semi free License",
+    "bugs": {
+      "url": "https://github.com/dmtzs/SmartAllHome/issues"
+    },
+    "build": {
+      "appId": "com.rasp.smarthome",
+      "productName": "SmartAllYourHome",
+      "icon": "resources/Imgs/SomeImage.png",
+      "directories": {
+        "output": "SmartAllYourHomeApp"
+      },
+      "nsis": {
+        "allowToChangeInstallationDirectory": "true",
+        "oneClick": "false"
+      },
+      "linux": {
+        "target": "AppImage",
+        "icon": "resources/Imgs/SomeImage.png"
+      },
+      "win": {
+        "target": "NSIS",
+        "icon": "resources/Imgs/SomeImage.ico"
+      }
+    },
+    "dependencies": {
+      "wait-port": "^0.2.9"
+    },
+    "devDependencies": {
+      "electron": "^14.1.1",
+      "electron-builder": "^22.13.1"
+    }
+  }
